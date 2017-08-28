@@ -1,0 +1,9 @@
+all : main.out
+
+reset : clean main.out
+
+main.out : main.c 
+	gcc main.c bst.c -o main.out
+
+clean :
+	rm main.out
